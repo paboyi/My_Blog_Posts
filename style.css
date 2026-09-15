@@ -1,0 +1,77 @@
+
+
+:root {
+    /* Global design Variables */
+    --primary-color: #d9ff1b;
+    --secondary-color: black;
+    /* --accent-color ; */
+    --shade-of-grey: #e4e4e4;
+
+    --font-primary: ;
+    --font-secondary: ;
+
+
+    font-size: 10px; /* setting base for relative units, now 1rem = 10px */
+    --header-1: ;
+    --header-2: 5rem;
+    --header-3: 4rem;
+    --header-4: ;
+    --body-text-small: ; 
+    --body-text-normal: 1.2rem; 
+    --body-text-medium: ; 
+    --body-text-large: ; 
+    --body-text-larger: ; 
+
+
+
+    /* Normal CSS */
+    box-sizing: border-box;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+}
+
+
+
+
+body {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(#ffffff 70%, #d9ff1b20); 
+}
+
+
+.main_center {
+    /* background-color: pink; */
+    padding: 3rem;
+    height: 45vh;
+    width: 70vw;
+
+    display: inherit;
+    flex-direction: column;
+    gap: 0;
+    align-items: center;
+    justify-content: baseline;
+
+    border: 0.15rem solid #dbdbdb;
+    border-radius: 1.5rem;
+    box-shadow: var(--primary-color) 10px 10px 1px;
+    font-size: 16px;
+
+    h3 {
+        font-size: var(--header-3);
+        text-transform: uppercase;
+    }
+
+    .username {
+        font-style: italic;
+    }
+}
